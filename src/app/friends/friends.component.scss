@@ -1,0 +1,19 @@
+.profiles {
+  display: flex;
+  align-items: center;
+  img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+  .profile-name {
+    display: flex;
+    flex-direction: column;
+    span {
+      color: rgba(0, 0, 0, 0.3);
+      font-size: 12px;
+    }
+  }
+}

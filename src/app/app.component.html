@@ -1,9 +1,13 @@
 <app-header></app-header>
 
-<div class="container">
-  <app-hamster-card
-    *ngFor="let i of [0, 1, 2, 3]"
-    [text]="postTexts[i]"
-    [img]="postImages[i]"
-  ></app-hamster-card>
+<div class="d-flex">
+  <div class="container">
+    <app-hamster-card
+      *ngFor="let i of [0, 1, 2, 3]"
+      [text]="postTexts[i]"
+      [img]="postImages[i]"
+    ></app-hamster-card>
+  </div>
+
+  <app-friend-suggestions></app-friend-suggestions>
 </div>

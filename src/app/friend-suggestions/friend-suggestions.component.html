@@ -1,0 +1,12 @@
+<app-friends></app-friends>
+
+<div class="m-bottom-16">
+  <b>Freundesvorschlaege</b>
+</div>
+
+<app-friends
+  *ngFor="let i of [0, 1, 2, 3]"
+  [name]="names[i]"
+  [text]="texts[i]"
+  [pic]="pics[i]"
+></app-friends>
