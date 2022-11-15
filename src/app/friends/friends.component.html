@@ -1,7 +1,14 @@
 <div class="profiles m-bottom-16">
   <img src="./assets/img/{{ pic }}" alt="" />
+
   <div class="profile-name">
     <b>{{ name }}</b>
     <span>{{ text }}</span>
   </div>
+
+  <a
+    *ngIf="canFollow"
+    (click)="fs.addFriend(name, text, pic); canFollow = false"
+    >Folgen</a
+  >
 </div>

@@ -8,12 +8,22 @@
     object-fit: cover;
     margin-right: 16px;
   }
-  .profile-name {
-    display: flex;
-    flex-direction: column;
-    span {
-      color: rgba(0, 0, 0, 0.3);
-      font-size: 12px;
+  a {
+    color: blue;
+    font-size: 12px;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
+  }
+}
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  span {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
   }
 }

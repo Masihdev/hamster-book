@@ -1,0 +1,7 @@
+<div class="standard-cart padding-16 fiends-container">
+  <div *ngIf="fs.names.length === 0">Du hast keine Freunde 🐹</div>
+
+  <div *ngFor="let name of fs.names; let i = index" class="friend">
+    <img src="./assets/img/{{ fs.pics[i] }}" alt="" /> {{ name }}
+  </div>
+</div>

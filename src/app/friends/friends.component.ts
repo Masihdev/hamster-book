@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FriendService } from '../friend.service';
 
 @Component({
   selector: 'app-friends',
@@ -9,8 +10,9 @@ export class FriendsComponent implements OnInit {
   @Input() name: string = 'Manischa';
   @Input() text: string = '8 Jahre alt';
   @Input() pic: string = '1.jpg';
+  @Input() canFollow = true;
 
-  constructor() {}
+  constructor(public fs: FriendService) {}
 
   ngOnInit(): void {}
 }
