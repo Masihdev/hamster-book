@@ -8,6 +8,8 @@ import { HamsterCardComponent } from './hamster-card/hamster-card.component';
 import { FriendSuggestionsComponent } from './friend-suggestions/friend-suggestions.component';
 import { FriendsComponent } from './friends/friends.component';
 import { FriendboxComponent } from './friendbox/friendbox.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { FriendboxComponent } from './friendbox/friendbox.component';
     HamsterCardComponent,
     FriendSuggestionsComponent,
     FriendsComponent,
-    FriendboxComponent
+    FriendboxComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
